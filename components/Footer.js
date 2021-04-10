@@ -1,13 +1,14 @@
 import styles from './Footer.module.css'
 
-export default function Footer() {
+const Footer = () => {
+  const currentYear = new Date().getFullYear()
   return (
     <>
       <footer className={styles.footer}>
-        Made with{' '}
-        <img src='/netliheart.svg' alt='Netlify Logo' className={styles.logo} />{' '}
-        for you
+        Competent Software/Web Developer | Fullstack developer {currentYear}
       </footer>
     </>
   )
 }
+
+export default Footer
