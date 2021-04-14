@@ -1,23 +1,20 @@
-import Head from 'next/head'
+import Meta from '@components/Meta'
+import Menu from '@components/Menu'
 import Header from '@components/Header'
 import Footer from '@components/Footer'
 
-export default function Home() {
+const Home = () => {
   return (
-    <div className='container'>
-      <Head>
-        <title>ChrisDevCode</title>
-        <link rel='icon' href='/favicon.ico' />
-      </Head>
-
+    <>
+      <Meta titleTage='ChrisDevCode' />
+      {/* <Menu /> */}
       <main>
         <Header title='Chris Achinga | chrisdevcode' />
-        <p className='description'>
-          Documenting My Journey
-        </p>
+        <p className='description'>Documenting My Journey</p>
       </main>
-
       <Footer />
-    </div>
+    </>
   )
 }
+
+export default Home
